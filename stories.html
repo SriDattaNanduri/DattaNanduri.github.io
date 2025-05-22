@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .home {
+      min-height: 100vh;
+      padding: 20px 5%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      text-align: left;
+      gap: 20px;
+    }
+
+    .home-text {
+      flex: 1;
+    }
+
+    .home-text h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .home-text p {
+      font-size: 1.2rem;
+      line-height: 1.5;
+    }
+
+    .home-image {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .home-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    /* Large desktops */
+    @media (max-width: 1200px) {
+      .home-text h1 {
+        font-size: 2.5rem;
+      }
+      .home-text p {
+        font-size: 1.1rem;
+      }
+    }
+
+    /* Tablets and smaller laptops */
+    @media (max-width: 992px) {
+      .home {
+        padding: 20px 3%;
+        gap: 15px;
+      }
+      .home-text h1 {
+        font-size: 2.2rem;
+      }
+      .home-text p {
+        font-size: 1rem;
+      }
+    }
+
+    /* Large phones and small tablets */
+    @media (max-width: 768px) {
+      .home {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 2%;
+        gap: 20px;
+      }
+      .home-text h1 {
+        font-size: 2rem;
+      }
+      .home-text p {
+        font-size: 0.95rem;
+      }
+      .home-image {
+        margin-top: 15px;
+      }
+    }
+
+    /* Small phones */
+    @media (max-width: 480px) {
+      .home {
+        padding: 15px 1.5%;
+      }
+      .home-text h1 {
+        font-size: 1.6rem;
+      }
+      .home-text p {
+        font-size: 0.9rem;
+      }
+      .home-image img {
+        border-radius: 8px;
+      }
+    }
+
+    /* Extra small phones */
+    @media (max-width: 360px) {
+      .home-text h1 {
+        font-size: 1.4rem;
+      }
+      .home-text p {
+        font-size: 0.85rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="home">
+    <div class="home-text">
+      <h1>Welcome to My Website</h1>
+      <p>This is a simple responsive home page. It looks great on phones and desktops without squeezing.</p>
+    </div>
+    <div class="home-image">
+      <img src="https://via.placeholder.com/400x300" alt="Placeholder Image" />
+    </div>
+  </section>
+</body>
+</html>

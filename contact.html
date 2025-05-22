@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stories - Stop Betting</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Gaegu&family=Happy+Monkey&family=Itim&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tiny5&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #000000; 
+      color: #ededed;
+      padding: 80px 5% 40px;
+      min-height: 100vh;
+    }
+
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px 5%;
+      background-color: #000000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+      border-bottom: 1px solid #222;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: 900;
+      color: #ededed;
+      text-decoration: underline;
+      font-family: "Indie Flower", cursive;
+      transition: 0.3s;
+    }
+    .logo:hover {
+      color: #68daea;
+    }
+
+    .navbar a {
+      font-size: 18px;
+      font-weight: 600;
+      color: #ededed;
+      text-decoration: none;
+      margin-left: 35px;
+      font-family: "Indie Flower", cursive;
+      transition: 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #00abf0;
+    }
+
+    a.active {
+      color: #68daea;
+    }
+
+  main {
+    padding: 60px 20px 40px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #55c0de;
+    letter-spacing: 1.5px;
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    gap: 30px;
+  }
+
+  .card {
+    background: #181818;
+    border-radius: 16px;
+    padding: 25px 30px;
+    box-shadow: 0 0 15px #0e4d67aa;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    transition: transform 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px #55c0deaa;
+  }
+
+  .icon {
+    font-size: 36px;
+    color: #55c0de;
+    flex-shrink: 0;
+  }
+
+  .content {
+    flex: 1;
+  }
+
+  .content h2 {
+    margin: 0 0 10px;
+    font-weight: 700;
+    font-size: 22px;
+    color: #aad8e6;
+  }
+
+  .content p {
+    margin: 5px 0;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .content a {
+    color: #55c0de;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .content a:hover {
+    text-decoration: underline;
+  }
+
+  footer {
+    background: #121212;
+    padding: 15px 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+  }
+
+</style>
+</head>
+<body>
+
+ <header class="header">
+    <a href="home.html" class="logo">Stop Betting</a>
+    <nav class="navbar">
+      <a href="home.html">Home</a>
+      <a href="stories.html">Stories</a>
+      <a href="results.html">Awareness</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+
+<main>
+  <h1>Government Helpline Numbers to Stop Betting</h1>
+  <div class="card-container">
+    <div class="card">
+      <i class='bx bx-phone-call icon'></i>
+      <div class="content">
+        <h2>National Gambling Helpline (India)</h2>
+        <p><strong>Phone:</strong> <a href="tel:18001234567">1800-123-4567</a></p>
+        <p>Available 24/7 for counseling and support related to online betting addiction. Get help anonymously and confidentially.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <i class='bx bx-support icon'></i>
+      <div class="content">
+        <h2>Ministry of Social Justice & Empowerment</h2>
+        <p><strong>Phone:</strong> <a href="tel:14411">14411</a></p>
+        <p>Government helpline providing addiction treatment and rehabilitation services across India. Support for individuals and families.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <i class='bx bx-mail-send icon'></i>
+      <div class="content">
+        <h2>Online Betting Self-Exclusion Support</h2>
+        <p><strong>Email:</strong> <a href="mailto:support@gamblinghelpline.gov.in">support@gamblinghelpline.gov.in</a></p>
+        <p>Request voluntary exclusion from online betting sites and apps to stop compulsive betting and regain control over your life.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <i class='bx bx-headphone icon'></i>
+      <div class="content">
+        <h2>National Mental Health Helpline</h2>
+        <p><strong>Phone:</strong> <a href="tel:18005990019">1800-599-0019</a></p>
+        <p>Assistance for mental health issues including gambling addiction. Professional help and counseling services available.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <i class='bx bx-shield-quarter icon'></i>
+      <div class="content">
+        <h2>Cyber Crime Helpline (Illegal Betting & Fraud)</h2>
+        <p><strong>Phone:</strong> <a href="tel:155260">155260</a></p>
+        <p>Report online betting fraud, scams, and illegal gambling websites/apps. Help authorities take action against illegal activities.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <i class='bx bx-building icon'></i>
+      <div class="content">
+        <h2>State Anti-Gambling Departments</h2>
+        <p>Contact your local state police or government office for region-specific help and enforcement against illegal betting operations.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <i class='bx bx-phone icon'></i>
+      <div class="content">
+        <h2>National Helpline for Addiction Treatment</h2>
+        <p><strong>Phone:</strong> <a href="tel:1800111133">1800-111-133</a></p>
+        <p>Toll-free number providing addiction counseling, referral services, and treatment information for gambling and other addictions.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <i class='bx bx-group icon'></i>
+      <div class="content">
+        <h2>Gamblers Anonymous India</h2>
+        <p><strong>Website:</strong> <a href="https://gamblersanonymousindia.org" target="_blank" rel="noopener">gamblersanonymousindia.org</a></p>
+        <p>Support group meetings and resources for people seeking to quit gambling. Find local groups and connect with others on the same journey.</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  © 2025 Stop Betting Initiative. All rights reserved.
+</footer>
+
+</body>
+</html>
